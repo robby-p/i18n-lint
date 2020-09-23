@@ -4,11 +4,11 @@
 
 ### install
 
-`$> npm install -g i18n-lint`
+`$> npm install -g i18n-t-lint`
 
 ### run
 
-`$> i18n-lint --dir=src --ext=js,ts,tsx,jsx`
+`$> i18n-t-lint --dir=src --ext=js,ts,tsx,jsx`
 
 - The above flags are optional, and the above example is the default
 
@@ -16,4 +16,4 @@
 
 - Use npx
 
-`$> npx i18n-lint --dir=src --ext=js,ts,tsx,jsx`
+`$> npx i18n-t-lint --dir=src --ext=js,ts,tsx,jsx`
