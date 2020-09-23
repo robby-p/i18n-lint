@@ -1,4 +1,4 @@
-### i18n lint
+### i18n t lint
 
 - Catch template tags inside your `t()` and `<T>` calls
 
