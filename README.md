@@ -1,10 +1,12 @@
 ### i18n t lint
 
-- Catch template tags inside your `t()` and `<T>` calls
+Catch template literals inside your `t()` and `<T>` calls
 
-### install
+### usage/install
 
-`$> npm install -g i18n-t-lint`
+- Use npx
+
+`$> npx i18n-t-lint --dir=src --ext=js,ts,tsx,jsx`
 
 ### run
 
@@ -12,8 +14,3 @@
 
 - The above flags are optional, and the above example is the default
 
-### alternatively
-
-- Use npx
-
-`$> npx i18n-t-lint --dir=src --ext=js,ts,tsx,jsx`
