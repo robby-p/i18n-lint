@@ -23,6 +23,7 @@ const ARGS = {
 const { ext, dir, ...rest } = ARGS;
 (async function main() {
   const eslint = new ESLint({
+    resolvePluginsRelativeTo: __dirname,
     useEslintrc: false,
     extensions: ARGS.ext
       .replace(/\*|\./g, "")
@@ -36,7 +37,7 @@ const { ext, dir, ...rest } = ARGS;
           jsx: true,
         },
       },
-      parser: "@typescript-eslint/parser",
+      parser: require.resolve("@typescript-eslint/parser"),
       plugins: ["query"],
       rules: {
         "query/query": [
