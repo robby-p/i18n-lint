@@ -64,6 +64,6 @@ const { ext, dir, ...rest } = ARGS;
   const resultText = formatter.format(results);
   console.log(resultText);
 })().catch((error) => {
-  process.exitCode = 1;
   console.error(error);
+  process.exit(1);
 });
